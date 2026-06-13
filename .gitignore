@@ -1,0 +1,23 @@
+# Build
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Arquivos de usuário
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Rider
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.cache
