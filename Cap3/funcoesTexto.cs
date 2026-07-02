@@ -59,10 +59,36 @@ namespace livrocsharp
 
             WriteLine("Replace - troca o conteúdo da expressão");
             WriteLine($"texto atual: {empresa}");
-            
-            var novaEmpresa = empresa.Replace("Microsoft","Google");
+
+            var novaEmpresa = empresa.Replace("Microsoft", "Google");
 
             WriteLine($"texto trocado: {novaEmpresa}");
+            
+            WriteLine($"Split - divite e extrai cada palavra em um array");
+            string NivelLivro = "Este livro é basico de C#.";
+            string[] blocos = NivelLivro.Split(' ');
+            var contador = 1;
+            foreach (var exp in blocos)
+            {
+                WriteLine($"texto {contador++}: {exp}");
+            }
+            WriteLine($"Qtde de palavras: {blocos.Count()}");
+            WriteLine("Substring é usado para extrair parte do texto");
+            WriteLine(NivelLivro.Substring(5, 14));
+            string[] cesta = { "5 Laranjas", "10 Goiabas vermelhas", "5 Pêssegos doces", "5 Bananas" };
+            int qtde = 0;
+            // p.IndexOf("") + 1 retorna a posição inicial logos após o número
+            // ex: 5 Laranjas = posição 1 + 1 = 2
+            foreach (var p in cesta)
+            {
+                WriteLine($"{p.Substring(p.IndexOf(" ") + 1)}");
+                qtde += Convert.ToInt32(p.Substring(0,p.IndexOf(" ")));
+            }
+            
+            WriteLine($"Qtde total: {qtde:n0}");
+
+            // Ler apenas os números para somar na variável qtde
+            
 
         }
     }
