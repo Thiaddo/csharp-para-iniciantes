@@ -84,10 +84,24 @@ namespace livrocsharp
                 WriteLine($"{p.Substring(p.IndexOf(" ") + 1)}");
                 qtde += Convert.ToInt32(p.Substring(0,p.IndexOf(" ")));
             }
+
+            // Ler apenas os números para somar na variável qtde
             
             WriteLine($"Qtde total: {qtde:n0}");
 
-            // Ler apenas os números para somar na variável qtde
+            WriteLine("IsNullOrEmpty verifica se a string está nula ou vazia");
+            
+            string nome = "Renato";
+            string sobrenome = null;
+            
+            if(!String.IsNullOrEmpty(nome) && !String.IsNullOrEmpty(sobrenome))
+            {
+                WriteLine($"Nome completo: {nome} {sobrenome}");
+            }
+            else
+            {
+                WriteLine($"Nome: {nome}");
+            }
             
 
         }

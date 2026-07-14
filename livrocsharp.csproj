@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>livrocsharp.FuncoesTexto</StartupObject>
+    <StartupObject>livrocsharp.FuncoesDatas</StartupObject>
   </PropertyGroup>
 
 </Project>
